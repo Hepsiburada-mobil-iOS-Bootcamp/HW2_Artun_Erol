@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class ViewController: UIViewController {
     
     private var cameraButton: ActionButton!
@@ -18,19 +16,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpButtons()
+        
     }
     
     //MARK: -Setting Up buttons constraints & Actions and adding them to view.
     
     func setUpButtons() {
-         
+        
         cameraButton = ActionButton(frame: .zero, data: ActionButtonData(title: "Camera", type: .positive).actionButtonListener(by: {
-            print("Camera Button Pressed")
-            self.present(PermissionViewController(), animated: true, completion: nil)
+            self.present(CameraViewController(), animated: true, completion: nil)
         }))
         
         photoButton = ActionButton(frame: .zero, data: ActionButtonData(title: "Photos", type: .photos).actionButtonListener(by: {
-            print("PhotoButton Pressed")
+            self.present(PhotosViewController(), animated: true, completion: nil)
         }))
         
         cameraButton.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +40,7 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             cameraButton.topAnchor.constraint(equalTo: view.topAnchor,constant: 50),
             cameraButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-    
+            
             cameraButton.widthAnchor.constraint(equalToConstant: 120),
             cameraButton.heightAnchor.constraint(equalToConstant: 50),
             
@@ -54,7 +52,6 @@ class ViewController: UIViewController {
             
         ])
     }
-
-
+    
 }
 

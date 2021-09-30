@@ -8,18 +8,20 @@
 import Foundation
 import UIKit
 
-class PermissionViewController: UIViewController {
+class CameraViewController: UIViewController {
     
-    var permissionView : PermissionView!
+    var permissionView : CameraPermissionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTest()
+        configureView()
         
     }
     
-    func configureTest() {
-        permissionView = PermissionView()
+    //Adding permissionView to view hierarcy
+    
+    func configureView() {
+        permissionView = CameraPermissionView()
         permissionView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(permissionView)

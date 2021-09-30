@@ -1,5 +1,5 @@
 //
-//  PermissionView.swift
+//  PhotosPermissionView.swift
 //  permissionProjectLast
 //
 //  Created by Artun Erol on 30.09.2021.
@@ -7,9 +7,7 @@
 
 import UIKit
 
-class PermissionView: GenericBaseView<PermissionViewData> {
-    
-    var permissionViewData: PermissionViewData!
+class PhotosPermissionView: GenericBaseView<PermissionViewData> {
     
     //MARK: - Computed Properties
     
@@ -32,7 +30,7 @@ class PermissionView: GenericBaseView<PermissionViewData> {
     
     private lazy var image: UIImageView = {
         let temp = UIImageView()
-        temp.image = UIImage(named: "camera_")
+        temp.image = UIImage(named: "notif_")
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.contentMode = .scaleToFill
         
@@ -41,7 +39,7 @@ class PermissionView: GenericBaseView<PermissionViewData> {
     
     private lazy var label: UILabel = {
         let temp = UILabel()
-        temp.text = "Please athorize the access to Camera"
+        temp.text = "Please athorize the access to Photos"
         temp.font = .boldSystemFont(ofSize: 18)
         temp.translatesAutoresizingMaskIntoConstraints = false
         

@@ -8,15 +8,10 @@
 import Foundation
 import UIKit
 
-enum PermissionType {
-    
-}
-
 class PermissionViewData {
     private(set) var image: UIImage
     private(set) var label: UILabel
     private(set) var button: ActionModule
-    private(set) var permissionType: PermissionType?
     
     init(image: UIImage, label: UILabel,button: ActionModule) {
         self.image = image
