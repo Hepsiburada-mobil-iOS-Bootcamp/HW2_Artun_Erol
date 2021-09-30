@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     //MARK: -Setting Up buttons constraints & Actions and adding them to view.
     
     func setUpButtons() {
-        
+         
         cameraButton = ActionButton(frame: .zero, data: ActionButtonData(title: "Camera", type: .positive).actionButtonListener(by: {
             print("Camera Button Pressed")
         }))
