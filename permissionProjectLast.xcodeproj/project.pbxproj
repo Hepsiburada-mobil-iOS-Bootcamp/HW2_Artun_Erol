@@ -19,9 +19,14 @@
 		83BE0BA92705992B00366146 /* ActionButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BA82705992B00366146 /* ActionButtonData.swift */; };
 		83BE0BAB27059A2F00366146 /* GenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BAA27059A2F00366146 /* GenericProtocol.swift */; };
 		83BE0BB12705C03700366146 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BB02705C03700366146 /* UIButton+Extension.swift */; };
-		83BE0BB52705CA3700366146 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BB42705CA3700366146 /* PermissionView.swift */; };
-		83BE0BB92705CA6100366146 /* GenericPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BB82705CA6100366146 /* GenericPermissionView.swift */; };
 		83BE0BBE2705CA8F00366146 /* PermissionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BBD2705CA8F00366146 /* PermissionViewData.swift */; };
+		83BE0BC02705CC9E00366146 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BBF2705CC9E00366146 /* PermissionViewController.swift */; };
+		83BE0BC62705CF8500366146 /* ActionButtonModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BC52705CF8500366146 /* ActionButtonModule.swift */; };
+		83BE0BC82705CF8D00366146 /* PermissionViewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BC72705CF8D00366146 /* PermissionViewModule.swift */; };
+		83BE0BCB2705CFA200366146 /* ActionButtonModuleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BCA2705CFA200366146 /* ActionButtonModuleData.swift */; };
+		83BE0BCD2705D01900366146 /* GenericBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BCC2705D01900366146 /* GenericBaseView.swift */; };
+		83BE0BCF2705D03800366146 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BCE2705D03800366146 /* BaseView.swift */; };
+		83BE0BD42705D23F00366146 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0BD32705D23F00366146 /* PermissionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +44,14 @@
 		83BE0BA82705992B00366146 /* ActionButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonData.swift; sourceTree = "<group>"; };
 		83BE0BAA27059A2F00366146 /* GenericProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericProtocol.swift; sourceTree = "<group>"; };
 		83BE0BB02705C03700366146 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
-		83BE0BB42705CA3700366146 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
-		83BE0BB82705CA6100366146 /* GenericPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPermissionView.swift; sourceTree = "<group>"; };
 		83BE0BBD2705CA8F00366146 /* PermissionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewData.swift; sourceTree = "<group>"; };
+		83BE0BBF2705CC9E00366146 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
+		83BE0BC52705CF8500366146 /* ActionButtonModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonModule.swift; sourceTree = "<group>"; };
+		83BE0BC72705CF8D00366146 /* PermissionViewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewModule.swift; sourceTree = "<group>"; };
+		83BE0BCA2705CFA200366146 /* ActionButtonModuleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonModuleData.swift; sourceTree = "<group>"; };
+		83BE0BCC2705D01900366146 /* GenericBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericBaseView.swift; sourceTree = "<group>"; };
+		83BE0BCE2705D03800366146 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		83BE0BD32705D23F00366146 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +68,14 @@
 		83BE0B802704A00D00366146 = {
 			isa = PBXGroup;
 			children = (
+				83BE0BC42705CF5300366146 /* Modules */,
+				83BE0BAC27059A6700366146 /* Utils */,
 				83BE0BAF2705C02900366146 /* Extensions */,
+				83BE0BC12705CCCC00366146 /* Generics */,
 				83BE0BBA2705CA7200366146 /* Datas */,
 				83BE0BB22705CA0400366146 /* ViewControllers */,
-				83BE0BAE27059A7E00366146 /* Views */,
+				83BE0BAE27059A7E00366146 /* BaseViews */,
 				83BE0BAD27059A7400366146 /* Components */,
-				83BE0BAC27059A6700366146 /* Utils */,
 				83BE0B8B2704A00D00366146 /* permissionProjectLast */,
 				83BE0B8A2704A00D00366146 /* Products */,
 			);
@@ -109,18 +121,19 @@
 		83BE0BAD27059A7400366146 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				83BE0BD02705D22C00366146 /* PermissionView */,
 				83BE0BA12704A02A00366146 /* ActionButton */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		83BE0BAE27059A7E00366146 /* Views */ = {
+		83BE0BAE27059A7E00366146 /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
-				83BE0BB72705CA4900366146 /* PermissionViews */,
+				83BE0BCE2705D03800366146 /* BaseView.swift */,
 				83BE0BB62705CA3F00366146 /* ButtonViews */,
 			);
-			path = Views;
+			path = BaseViews;
 			sourceTree = "<group>";
 		};
 		83BE0BAF2705C02900366146 /* Extensions */ = {
@@ -135,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				83BE0B902704A00D00366146 /* ViewController.swift */,
+				83BE0BBF2705CC9E00366146 /* PermissionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -143,23 +157,14 @@
 			isa = PBXGroup;
 			children = (
 				83BE0BA62705984200366146 /* MainButtonView.swift */,
-				83BE0BA42705982900366146 /* GenericButtonView.swift */,
 			);
 			path = ButtonViews;
-			sourceTree = "<group>";
-		};
-		83BE0BB72705CA4900366146 /* PermissionViews */ = {
-			isa = PBXGroup;
-			children = (
-				83BE0BB42705CA3700366146 /* PermissionView.swift */,
-				83BE0BB82705CA6100366146 /* GenericPermissionView.swift */,
-			);
-			path = PermissionViews;
 			sourceTree = "<group>";
 		};
 		83BE0BBA2705CA7200366146 /* Datas */ = {
 			isa = PBXGroup;
 			children = (
+				83BE0BC92705CF9700366146 /* ModuleDatas */,
 				83BE0BBC2705CA8000366146 /* PermissionViewData */,
 				83BE0BBB2705CA7900366146 /* ActionButtonData */,
 			);
@@ -180,6 +185,48 @@
 				83BE0BBD2705CA8F00366146 /* PermissionViewData.swift */,
 			);
 			path = PermissionViewData;
+			sourceTree = "<group>";
+		};
+		83BE0BC12705CCCC00366146 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				83BE0BC32705CCD900366146 /* Button */,
+				83BE0BCC2705D01900366146 /* GenericBaseView.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		83BE0BC32705CCD900366146 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				83BE0BA42705982900366146 /* GenericButtonView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		83BE0BC42705CF5300366146 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				83BE0BC52705CF8500366146 /* ActionButtonModule.swift */,
+				83BE0BC72705CF8D00366146 /* PermissionViewModule.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		83BE0BC92705CF9700366146 /* ModuleDatas */ = {
+			isa = PBXGroup;
+			children = (
+				83BE0BCA2705CFA200366146 /* ActionButtonModuleData.swift */,
+			);
+			path = ModuleDatas;
+			sourceTree = "<group>";
+		};
+		83BE0BD02705D22C00366146 /* PermissionView */ = {
+			isa = PBXGroup;
+			children = (
+				83BE0BD32705D23F00366146 /* PermissionView.swift */,
+			);
+			path = PermissionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,17 +301,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				83BE0BA92705992B00366146 /* ActionButtonData.swift in Sources */,
+				83BE0BCB2705CFA200366146 /* ActionButtonModuleData.swift in Sources */,
 				83BE0B912704A00D00366146 /* ViewController.swift in Sources */,
+				83BE0BCD2705D01900366146 /* GenericBaseView.swift in Sources */,
 				83BE0B8D2704A00D00366146 /* AppDelegate.swift in Sources */,
 				83BE0BA52705982900366146 /* GenericButtonView.swift in Sources */,
 				83BE0BA72705984200366146 /* MainButtonView.swift in Sources */,
-				83BE0BB52705CA3700366146 /* PermissionView.swift in Sources */,
 				83BE0BB12705C03700366146 /* UIButton+Extension.swift in Sources */,
+				83BE0BC62705CF8500366146 /* ActionButtonModule.swift in Sources */,
 				83BE0B8F2704A00D00366146 /* SceneDelegate.swift in Sources */,
+				83BE0BC02705CC9E00366146 /* PermissionViewController.swift in Sources */,
 				83BE0BA32704A04100366146 /* ActionButton.swift in Sources */,
+				83BE0BD42705D23F00366146 /* PermissionView.swift in Sources */,
+				83BE0BC82705CF8D00366146 /* PermissionViewModule.swift in Sources */,
 				83BE0BBE2705CA8F00366146 /* PermissionViewData.swift in Sources */,
-				83BE0BB92705CA6100366146 /* GenericPermissionView.swift in Sources */,
 				83BE0BAB27059A2F00366146 /* GenericProtocol.swift in Sources */,
+				83BE0BCF2705D03800366146 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

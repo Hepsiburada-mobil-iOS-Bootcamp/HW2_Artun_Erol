@@ -22,10 +22,12 @@ class ActionButton: GenericButtonView<ActionButtonData> {
     func configureButton() {
         guard let data = getData() else { return }
         
+        //Setting Title and background color
         backgroundColor = data.type?.value
         setTitle(data.title, for: .normal)
         setTitleColor(.white, for: .normal)
         
+        //Adding Shadow
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 2)
         layer.shadowOpacity = 0.4

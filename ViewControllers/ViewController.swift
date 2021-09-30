@@ -26,6 +26,7 @@ class ViewController: UIViewController {
          
         cameraButton = ActionButton(frame: .zero, data: ActionButtonData(title: "Camera", type: .positive).actionButtonListener(by: {
             print("Camera Button Pressed")
+            self.present(PermissionViewController(), animated: true, completion: nil)
         }))
         
         photoButton = ActionButton(frame: .zero, data: ActionButtonData(title: "Photos", type: .photos).actionButtonListener(by: {
