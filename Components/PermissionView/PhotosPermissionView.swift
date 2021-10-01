@@ -46,7 +46,7 @@ class PhotosPermissionView: GenericBaseView<PermissionViewData> {
         return temp
     }()
     
-    private lazy var positiveButton: ActionButton = {
+     lazy var positiveButton: ActionButton = {
         let temp = ActionButton(frame: .zero, data: ActionButtonData(title: "Ok", type: .positive).actionButtonListener(by: {
             print("PositiveButtonPressed")
         }))
@@ -57,7 +57,7 @@ class PhotosPermissionView: GenericBaseView<PermissionViewData> {
         return temp
     }()
     
-    private lazy var negativeButton: ActionButton = {
+     lazy var negativeButton: ActionButton = {
         let temp = ActionButton(frame: .zero, data: ActionButtonData(title: "Not now", type: .negative).actionButtonListener(by: {
             print("Negative button Pressed")
         }))

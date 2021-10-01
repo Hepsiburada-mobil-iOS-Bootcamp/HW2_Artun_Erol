@@ -21,6 +21,11 @@ class PhotosViewController: UIViewController {
     
     func configureView() {
         permissionView = PhotosPermissionView()
+        
+        permissionView.negativeButton.addTarget(self, action: #selector(dissmisView), for: .touchUpInside)
+        
+        permissionView.positiveButton.addTarget(self, action: #selector(dissmisView), for: .touchUpInside)
+        
         permissionView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(permissionView)
@@ -34,6 +39,10 @@ class PhotosViewController: UIViewController {
             
             
         ])
+    }
+    
+    @objc func dissmisView() {
+        dismiss(animated: true, completion: nil)
     }
     
 }

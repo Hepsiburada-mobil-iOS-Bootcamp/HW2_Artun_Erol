@@ -22,8 +22,16 @@ class CameraViewController: UIViewController {
     
     func configureView() {
         permissionView = CameraPermissionView()
-        permissionView.translatesAutoresizingMaskIntoConstraints = false
         
+        //Adding Dissmiss Action to Buttons
+        
+        permissionView.negativeButton.addTarget(self, action: #selector(dissmisView), for: .touchUpInside)
+        
+        permissionView.positiveButton.addTarget(self, action: #selector(dissmisView), for: .touchUpInside)
+
+        
+        
+        permissionView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(permissionView)
         
         NSLayoutConstraint.activate([
@@ -35,6 +43,10 @@ class CameraViewController: UIViewController {
             
             
         ])
+    }
+    
+    @objc func dissmisView() {
+        dismiss(animated: true, completion: nil)
     }
     
 }

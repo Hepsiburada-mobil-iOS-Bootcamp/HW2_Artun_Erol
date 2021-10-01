@@ -18,4 +18,5 @@ class PermissionViewData {
         self.label = label
         self.button = button
     }
+    
 }
